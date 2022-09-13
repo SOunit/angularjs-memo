@@ -46,3 +46,14 @@
   - add dependency to module
   - (Angular execute DI)
   - get objects through argument by DI
+
+# render cycle
+
+- AngularJS Context
+- check event stack
+- dirty check until all data has no change
+- data change, dirty check, trigger re-render
+
+- 2-way binding / edit input
+- 1-way binding / just displaying data
+- one-time only binding / show data if no possibility of change
