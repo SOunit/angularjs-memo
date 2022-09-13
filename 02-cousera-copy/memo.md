@@ -29,3 +29,10 @@ https://damp-eyrie-18477.herokuapp.com/
 - `ui-sref` for link
 
 # fetch data
+
+# service
+
+- create service
+- add service to service-module
+- in main-module, add dependency to service-module
+- pull service to main-module
