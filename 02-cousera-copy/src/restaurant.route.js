@@ -13,15 +13,12 @@
         templateUrl: 'src/public/users/users.html',
         controller: 'usersController',
         resolve: {
-          users: function () {
-            return [
-              { name: 'jack', id: 1 },
-              { name: 'bec', id: 2 },
-              { name: 'kevin', id: 3 },
-              { name: 'kate', id: 4 },
-              { name: 'randal', id: 5 },
-            ];
-          },
+          users: [
+            'UserService',
+            function (UserService) {
+              return UserService.getUsers();
+            },
+          ],
         },
       })
       .state('user-detail', {
