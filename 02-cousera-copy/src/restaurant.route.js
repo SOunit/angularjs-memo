@@ -27,6 +27,17 @@
       .state('user-detail', {
         url: '/user/{id}',
         templateUrl: 'src/public/user-detail/user-detail.html',
+        controller: 'userDetailController',
+        resolve: {
+          user: [
+            'UserService',
+            '$stateParams',
+            function (UserService, $stateParams) {
+              console.log('UserService', UserService, $stateParams);
+              return UserService.getUser($stateParams.id);
+            },
+          ],
+        },
       });
 
     $urlRouterProvider.otherwise('/');

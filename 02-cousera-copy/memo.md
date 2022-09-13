@@ -36,3 +36,11 @@ https://damp-eyrie-18477.herokuapp.com/
 - add service to service-module
 - in main-module, add dependency to service-module
 - pull service to main-module
+
+- `service('NameService', function)`
+
+  - `NameService` is the reference to use from other places
+
+- create `UserService` function
+- set `var service = this`
+- `service.getUser = function`
