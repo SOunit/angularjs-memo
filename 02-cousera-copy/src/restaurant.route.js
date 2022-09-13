@@ -24,9 +24,9 @@
           },
         },
       })
-      .state('menu-items', {
-        url: '/menu/{id}',
-        templateUrl: 'src/public/menu-items/menu-items.html',
+      .state('user-detail', {
+        url: '/user/{id}',
+        templateUrl: 'src/public/user-detail/user-detail.html',
       });
 
     $urlRouterProvider.otherwise('/');
