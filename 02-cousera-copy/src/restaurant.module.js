@@ -1,5 +1,5 @@
 (function () {
   'use strict';
 
-  angular.module('restaurant', ['ui.router', 'menu']);
+  angular.module('restaurant', ['ui.router', 'users']);
 })();

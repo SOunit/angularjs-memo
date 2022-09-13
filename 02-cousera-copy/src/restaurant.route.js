@@ -8,10 +8,10 @@
         url: '/',
         templateUrl: 'src/public/home/home.html',
       })
-      .state('menu', {
-        url: '/menu',
-        templateUrl: 'src/public/menu/menu.html',
-        controller: 'menuController',
+      .state('users', {
+        url: '/users',
+        templateUrl: 'src/public/users/users.html',
+        controller: 'usersController',
         resolve: {
           users: function () {
             return [
