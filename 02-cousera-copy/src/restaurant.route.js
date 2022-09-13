@@ -33,7 +33,6 @@
             'UserService',
             '$stateParams',
             function (UserService, $stateParams) {
-              console.log('UserService', UserService, $stateParams);
               return UserService.getUser($stateParams.id);
             },
           ],

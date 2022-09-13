@@ -6,9 +6,11 @@
     var service = this;
 
     service.getUser = function (id) {
-      $http.get(`https://jsonplaceholder.typicode.com/users/${id}`);
-
-      return { name: 'jack', id: 1 };
+      return $http
+        .get(`https://jsonplaceholder.typicode.com/users/${id}`)
+        .then(function (response) {
+          return response.data;
+        });
     };
   }
 })();
