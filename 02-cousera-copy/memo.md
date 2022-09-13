@@ -27,3 +27,5 @@ https://damp-eyrie-18477.herokuapp.com/
 - `$stateProvider` for route
 - `$urlRouterProvider` for default route
 - `ui-sref` for link
+
+# fetch data
