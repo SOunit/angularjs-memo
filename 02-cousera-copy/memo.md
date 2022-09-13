@@ -19,3 +19,11 @@ https://damp-eyrie-18477.herokuapp.com/
 # initialize AngularJS
 
 - `ng-app=<module name>`
+
+# add route
+
+- add lib file
+- dependency `ui.router`
+- `$stateProvider` for route
+- `$urlRouterProvider` for default route
+- `ui-sref` for link

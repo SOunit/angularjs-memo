@@ -38,6 +38,7 @@
 
     <!-- lib -->
     <script src="https://code.angularjs.org/1.5.8/angular.js"></script>
+    <script src="//unpkg.com/angular-ui-router@0.3.1/release/angular-ui-router.js"></script>
 
     <!-- main restaurant module -->
     <script src="src/restaurant.module.js"></script>
@@ -46,9 +47,13 @@
     <header>
       <ul>
         <li>
-          <a href="#/menu">Menu</a>
+          <a ui-sref="home">Home</a>
+        </li>
+        <li>
+          <a ui-sref="menu">Menu</a>
         </li>
       </ul>
     </header>
+    <ui-view></ui-view>
   </body>
 </html>
