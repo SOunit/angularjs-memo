@@ -4,3 +4,7 @@
 - poke scope to access data
   - pass data like react
   - add data name to `bindings`
+
+# on-click function run on every render
+
+-
