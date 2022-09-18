@@ -50,13 +50,15 @@
       <ul>
         <li ng-click="toggleNotifications()">Notifications</li>
       </ul>
-      <div ng-show="show">
-        <header>Notifications</header>
-        <ul>
-          <li ng-repeat="notification in notifications">
-            {{notification.message}}
-          </li>
-        </ul>
+      <div ng-show="show" class="notifications">
+        <header class="notifications__header">Notifications</header>
+        <div class="notification__items-wrapper">
+          <ul class="notification__items">
+            <li ng-repeat="notification in notifications">
+              {{notification.message}}
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <div>Show: {{show}}</div>
