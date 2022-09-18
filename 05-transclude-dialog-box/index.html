@@ -47,11 +47,12 @@
     <script src="src/directives/card/card.directive.js"></script>
     <script src="src/directives/userCard/userCard.module.js"></script>
     <script src="src/directives/userCard/userCard.directive.js"></script>
+    <script src="src/directives/userCard/userCard.controller.js"></script>
 
     <!-- style -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
+  <body ng-controller="appController">
     <input type="text" ng-model="test" />
     {{test}}
     <card-directive>
@@ -63,6 +64,11 @@
         modi.
       </p>
     </card-directive>
-    <user-card-directive></user-card-directive>
+    <ul>
+      <li ng-repeat="user in users">{{user.name}}</li>
+    </ul>
+    <div>
+      <user-card-directive ng-repeat="user in users"></user-card-directive>
+    </div>
   </body>
 </html>
