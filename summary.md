@@ -57,3 +57,11 @@
 - 2-way binding / edit input
 - 1-way binding / just displaying data
 - one-time only binding / show data if no possibility of change
+
+# custom directive
+
+- create `module`
+- add `directive` to `module`
+- add `module` to `main-module`
+- add `directive template html`
+- add `controller` to fetch / connect data to `directive`
