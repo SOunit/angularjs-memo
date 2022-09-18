@@ -51,7 +51,8 @@
   </head>
   <body ng-controller="appController">
     <div ng-repeat="user in users">
-      <card user="user"></card>
+      {{index}}
+      <card user="user" remove="remove($index)"></card>
     </div>
   </body>
 </html>
