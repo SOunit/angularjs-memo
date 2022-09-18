@@ -49,9 +49,9 @@
       <div ng-show="show">
         <header>Notifications</header>
         <ul>
-          <li>test1</li>
-          <li>test2</li>
-          <li>test3</li>
+          <li ng-repeat="notification in notifications">
+            {{notification.message}}
+          </li>
         </ul>
       </div>
     </header>
