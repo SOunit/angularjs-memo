@@ -1,3 +1,3 @@
 (function () {
-  angular.module('app', ['card']);
+  angular.module('app', ['card', 'userCard']);
 })();
