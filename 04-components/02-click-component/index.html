@@ -42,10 +42,16 @@
     <!-- main module -->
     <script src="src/app.module.js"></script>
 
+    <!-- modules -->
+    <script src="src/components/card.module.js"></script>
+    <script src="src/components/card.component.js"></script>
+
     <!-- style -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body ng-controller="appController">
-    <div ng-repeat="user in users">{{user.name}}</div>
+    <div ng-repeat="user in users">
+      <card></card>
+    </div>
   </body>
 </html>

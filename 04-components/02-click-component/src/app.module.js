@@ -1,5 +1,5 @@
 (function () {
-  angular.module('app', []);
+  angular.module('app', ['card']);
 
   angular.module('app').controller('appController', appController);
 
