@@ -7,4 +7,5 @@
 
 # on-click function run on every render
 
--
+- use `&` in `bindings`
+- use `<h2 ng-click="$ctrl.remove({index: $index})">`

@@ -1,5 +1,5 @@
-<div class="card">
-  <h2 ng-click="$ctrl.remove">
+<div class="card" ng-click="$ctrl.remove({index: $index})">
+  <h2>
     {{ $ctrl.user.name }}
   </h2>
 </div>

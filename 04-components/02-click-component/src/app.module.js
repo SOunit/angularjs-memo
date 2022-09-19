@@ -17,7 +17,7 @@
 
     function remove(id) {
       console.log('appController remove: ', id);
-      // users.splice(id, 1);
+      users.splice(id, 1);
     }
 
     $scope.remove = remove;

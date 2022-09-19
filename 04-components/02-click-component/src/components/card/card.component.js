@@ -3,7 +3,7 @@
     templateUrl: 'src/components/card/card.component.html',
     bindings: {
       user: '<',
-      remove: '<',
+      remove: '&',
     },
   });
 })();
