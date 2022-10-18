@@ -1,4 +1,20 @@
-const ITEMS_DATA = ['test1', 'test2', 'test3', 'test4', 'test5'];
+const ITEMS_DATA = [
+  { title: 'test1' },
+  { title: 'test2' },
+  { title: 'test3' },
+  { title: 'test4' },
+  { title: 'test5' },
+  { title: 'test6' },
+  { title: 'test7' },
+  { title: 'test8' },
+  { title: 'test9' },
+  { title: 'test10' },
+  { title: 'test11' },
+  { title: 'test12' },
+  { title: 'test13' },
+  { title: 'test14' },
+  { title: 'test15' },
+];
 
 (function () {
   angular.module('app', ['ui.bootstrap']);
@@ -7,8 +23,10 @@ const ITEMS_DATA = ['test1', 'test2', 'test3', 'test4', 'test5'];
 
   appController.$inject = ['$scope'];
   function appController($scope) {
-    $scope.test = function () {
-      console.log('test');
+    $scope.selectItem = function ($item, $model, $label) {
+      console.log('$item', $item);
+      console.log('$model', $model);
+      console.log('$label', $label);
     };
 
     $scope.items = ITEMS_DATA;
