@@ -27,8 +27,13 @@ const ITEMS_DATA = [
       console.log('$item', $item);
       console.log('$model', $model);
       console.log('$label', $label);
+
+      // reset search keyword
+      $scope.selectedItems.push($item);
+      $scope.searchQuery = '';
     };
 
     $scope.items = ITEMS_DATA;
+    $scope.selectedItems = [];
   }
 })();

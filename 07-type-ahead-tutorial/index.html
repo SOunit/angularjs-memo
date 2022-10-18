@@ -28,5 +28,8 @@
       uib-typeahead="item.title for item in items | filter:$viewValue | limitTo:8"
       typeahead-on-select="selectItem($item, $model, $label)"
     />
+    <ul>
+      <li ng-repeat="selectedItem in selectedItems">{{selectedItem.title}}</li>
+    </ul>
   </body>
 </html>
