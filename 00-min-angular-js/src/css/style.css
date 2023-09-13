@@ -1,0 +1,8 @@
+.person-card {
+    border: 3px solid red;
+    border-radius: 8px;
+}
+
+.mb-1 {
+    margin-bottom: 10px;
+}
