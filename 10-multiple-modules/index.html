@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimum AngularJS Project</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <!-- lib -->
+    <script src="https://code.angularjs.org/1.5.8/angular.js"></script>
+    <script src="//unpkg.com/angular-ui-router@0.3.1/release/angular-ui-router.js"></script>
+
+    <!-- modules -->
+    <script src="src/js/modules/app.module.js"></script>
+
+    <!-- services -->
+    <script src="src/js/services/data-store.service.js"></script>
+
+    <!-- components -->
+    <script src="src/js/components/person-card.component.js"></script>
+
+    <!-- controllers -->
+    <script src="src/js/controllers/index-page.controller.js"></script>
+</head>
+
+<body ng-app="app" ng-controller="IndexPageController as IndexPageCtrl">
+    <h1>Minimum AngularJS Project</h1>
+
+    <section class="input-box mb-1">
+        <input type="text" ng-model="IndexPageCtrl.name">
+        <button ng-click="IndexPageCtrl.add()">Add</button>
+    </section>
+
+    <section class="list-view">
+        <div class="mb-1" ng-repeat="person in IndexPageCtrl.personList">
+            <person-card person="person"></person-card>
+        </div>
+    </section>
+</body>
+
+</html>

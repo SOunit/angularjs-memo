@@ -1,0 +1,9 @@
+.person-card {
+    border: 3px solid pink;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.mb-1 {
+    margin-bottom: 10px;
+}
