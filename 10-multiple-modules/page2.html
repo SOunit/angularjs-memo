@@ -1,17 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Page 2 : Minimum AngularJS Project</title>
 
+    <!-- style -->
     <link rel="stylesheet" href="src/css/style.css">
+
+    <!-- lib -->
+    <script src="https://code.angularjs.org/1.5.8/angular.js"></script>
+    <script src="//unpkg.com/angular-ui-router@0.3.1/release/angular-ui-router.js"></script>
+
+    <!-- modules -->
+    <script src="src/js/modules/page2.module.js"></script>
+
+    <!-- services -->
+    <script src="src/js/services/data-store.service.js"></script>
+
+    <!-- components -->
+    <script src="src/js/components/person-card.component.js"></script>
+
+    <!-- controllers -->
+    <script src="src/js/controllers/index-page.controller.js"></script>
+
 </head>
-<body class="page2">
+
+<body class="page2" ng-app="page-2-module">
     <h1>Multiple Modules</h1>
 
     <section class="mb-1">
         <a href="index.html">To Page 1</a>
     </section>
 </body>
+
 </html>
