@@ -1,7 +1,7 @@
 (function () {
     "use strict";
 
-    angular.module("services-module").service("DataStoreService", DataStoreService);
+    angular.module("data-store-service-module", []).service("DataStoreService", DataStoreService);
 
     DataStoreService.$inject = [];
     function DataStoreService() {

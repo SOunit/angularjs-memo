@@ -1,3 +1,3 @@
 (function () {
-    angular.module("page-2-module", ["services-module", "components-module", "controllers-module"]);
+    angular.module("page-2-module", ["person-card-component-module", "index-page-controller-module", "data-store-service-module"]);
 })()
