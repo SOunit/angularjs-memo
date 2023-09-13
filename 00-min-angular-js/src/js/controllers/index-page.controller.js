@@ -1,5 +1,5 @@
 (function () {
-    angular.module("app").controller("IndexPageController", IndexPageController)
+    angular.module("index-page-controller-module", []).controller("IndexPageController", IndexPageController)
 
     IndexPageController.$inject = ["DataStoreService"];
     function IndexPageController(DataStoreService) {
